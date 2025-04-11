@@ -1,48 +1,80 @@
-# Astro Starter Kit: Basics
+# Banking App
 
-```sh
-npm create astro@latest -- --template basics
+This project is a banking application built with Astro for the frontend and Express.js for the backend. It provides functionalities for managing banking operations such as account details and transactions.
+
+## Project Structure
+
+```
+banking-app
+├── backend          # Backend application using Express.js
+│   ├── src
+│   │   ├── app.ts                  # Entry point for the backend application
+│   │   ├── controllers              # Contains controllers for handling requests
+│   │   ├── routes                   # Defines the routes for the backend
+│   │   └── types                    # TypeScript interfaces for data structures
+│   ├── package.json                 # NPM configuration for the backend
+│   ├── tsconfig.json                # TypeScript configuration for the backend
+│   └── README.md                    # Documentation for the backend
+├── frontend         # Frontend application using Astro
+│   ├── src
+│   │   ├── components               # Reusable components for the frontend
+│   │   ├── layouts                  # Layouts for structuring pages
+│   │   ├── pages                    # Pages of the frontend application
+│   │   └── styles                   # Global styles for the frontend
+│   ├── package.json                 # NPM configuration for the frontend
+│   └── README.md                    # Documentation for the frontend
+└── README.md         # Overview of the entire banking app project
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Getting Started
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+### Prerequisites
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+- Node.js (version 14 or higher)
+- npm (Node Package Manager)
 
-## 🚀 Project Structure
+### Installation
 
-Inside of your Astro project, you'll see the following folders and files:
+1. Clone the repository:
+   ```
+   git clone <repository-url>
+   cd banking-app
+   ```
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+2. Install backend dependencies:
+   ```
+   cd backend
+   npm install
+   ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+3. Install frontend dependencies:
+   ```
+   cd ../frontend
+   npm install
+   ```
 
-## 🧞 Commands
+### Running the Application
 
-All commands are run from the root of the project, from a terminal:
+1. Start the backend server:
+   ```
+   cd backend
+   npm start
+   ```
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+2. Start the frontend application:
+   ```
+   cd frontend
+   npm run dev
+   ```
 
-## 👀 Want to learn more?
+### API Endpoints
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+Refer to the backend README for a list of available API endpoints and their usage.
+
+### Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any improvements or features.
+
+### License
+
+This project is licensed under the MIT License.

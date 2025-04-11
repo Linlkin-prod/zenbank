@@ -1,0 +1,24 @@
+{
+  "name": "banking-app-frontend",
+  "version": "1.0.0",
+  "description": "Frontend for the Banking App using Astro",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "start": "astro start"
+  },
+  "dependencies": {
+    "astro": "^1.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^4.0.0"
+  },
+  "keywords": [
+    "banking",
+    "astro",
+    "frontend"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
